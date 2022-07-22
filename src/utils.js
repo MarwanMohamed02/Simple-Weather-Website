@@ -76,4 +76,3 @@ async function forecast(address) {
     }
 }
 exports.forecast = forecast;
-//# sourceMappingURL=utils.js.map
