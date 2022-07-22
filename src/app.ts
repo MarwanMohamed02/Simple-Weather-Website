@@ -1,9 +1,10 @@
 import path from 'path'
 import express from 'express'
-const app = express();
 import hbs from 'hbs'
 import { forecast } from './test';
 
+const app = express();
+const port = process.env.PORT || 3000;
 
 
 /* Creating paths */
@@ -82,7 +83,7 @@ app.get("*", (req, res) => {
 })
      
 
-app.listen(3000, () => {
-    console.log("Server is up on port 3000");
+app.listen(port, () => {
+    console.log(`Server is up on port ${port}`);
 })
 

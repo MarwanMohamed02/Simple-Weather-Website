@@ -5,9 +5,10 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 const path_1 = __importDefault(require("path"));
 const express_1 = __importDefault(require("express"));
-const app = (0, express_1.default)();
 const hbs_1 = __importDefault(require("hbs"));
 const test_1 = require("./test");
+const app = (0, express_1.default)();
+const port = process.env.PORT || 3000;
 /* Creating paths */
 const publicDirPath = path_1.default.join(__dirname, "../public");
 const viewsPath = path_1.default.join(__dirname, "../templates/views");
@@ -69,6 +70,6 @@ app.get("*", (req, res) => {
         name: "Marwan Mohamed"
     });
 });
-app.listen(3000, () => {
-    console.log("Server is up on port 3000");
+app.listen(port, () => {
+    console.log(`Server is up on port ${port}`);
 });
