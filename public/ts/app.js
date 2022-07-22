@@ -1,15 +1,4 @@
 "use strict";
-console.log("Client side js file");
-// fetch("http://localhost:3000/weather?address=Boston").then((response) => {
-//     response.json().then(({location, weatherDescription, temperature, feelslike,error}) => {
-//         if (error) {
-//             console.log(`some error ${error}`);
-//         }
-//         else {
-//             console.log(`${weatherDescription} in ${location} the temp is ${temperature} but feels like ${feelslike}`);
-//         }
-//     })
-// })
 // Getting the html objects
 const weatherForm = document.querySelector("form");
 const search = document.querySelector("input");
@@ -40,4 +29,3 @@ weatherForm?.addEventListener("submit", (event) => {
         });
     });
 });
-//# sourceMappingURL=app.js.map
