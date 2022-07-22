@@ -26,6 +26,7 @@ p {
     text-align: center;
     color: rgb(107, 102, 102);
     font-size: 20px;
+    margin: 30px;
 }
 
 div {
@@ -38,6 +39,7 @@ header a {
     color:white;
     margin-right: 16px;
     text-decoration: none;
+    
 }
 
 input {
