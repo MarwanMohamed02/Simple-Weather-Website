@@ -25,6 +25,7 @@ body {
 p {
     text-align: center;
     color: rgb(107, 102, 102);
+    font-size: 20px;
 }
 
 div {
@@ -42,7 +43,7 @@ header a {
 input {
     border: 1px solid rgb(25, 149, 232);
     padding: 4px;
-    color:rgb(92, 98, 105);
+    color:black;
 }
 
 button {
