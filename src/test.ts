@@ -7,7 +7,6 @@ interface Data {
     weatherDescription: any | undefined,
     feelslike: any | undefined,
     error: any | undefined,
-
 }
 
 
