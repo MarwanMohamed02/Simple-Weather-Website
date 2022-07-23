@@ -37,9 +37,9 @@ div {
 header a {
     font-family: arial;
     color:white;
-    margin-right: 16px;
-    text-decoration: none;
-    
+    margin-right: 25px;
+    margin-left: 25px;
+    text-decoration: none;    
 }
 
 input {
