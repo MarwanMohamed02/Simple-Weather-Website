@@ -7,10 +7,10 @@ const forecast = document.querySelector("#forecast");
 
 
 
-// An event listener that executes everytime the event happens
+// An event listener that executes everytime a submission is done in the form 
 weatherForm?.addEventListener("submit", (event) => {
     
-    event.preventDefault();
+    event.preventDefault();     // prevents the browser from auto-refreshing
     
     if (!search) {
         return console.log("Must enter a location");
@@ -22,11 +22,11 @@ weatherForm?.addEventListener("submit", (event) => {
     const url = `/weather?address=${address}`;
 
     if (forecast) {
-        forecast.textContent = "Loading...";
+        forecast.textContent = "Loading...";        // .textContent changes what is inside <p> </p>
       
     }
     
-    
+    // requesting data from our json endpoint
     fetch(url).then((response) => {
         response.json().then(({ location, weatherDescription, temperature, feelslike, error}) => {
             if (error) {
